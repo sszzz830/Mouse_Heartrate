@@ -1,13 +1,13 @@
 # Mouse_Heartrate
 利用鼠标位移测量心率(或者抖腿频率)的程序<br>
--measure heart rate (or leg shaking frequency) using mouse displacement
+-Measure heart rate (or leg shaking frequency) using mouse displacement
 
 ## 原理/Method
 测量时把鼠标倒过来放在桌子上,然后把手指悬在鼠标传感器上一点点高的位置(测量抖腿频率时也可以把鼠标搭在腿上)<br>
 读取一段时间内(默认5s,采样速度100/s)的鼠标位移数据,然后做ICA变换和滤波处理,最后以频谱图上最高峰作为心率/抖腿频率<br>
 心率测量准确率受手的位置等影响较大<br>
 -Place the mouse upside down on a flat surface and hover your finger slightly above the mouse sensor (you can also place the mouse on your leg to measure leg shaking frequency)<br>
--Read the mouse displacement data over a period of time (default 5s, sampling rate 100/s), then apply ICA transform and filtering to the data. Finally, -take the highest peak in the frequency spectrum as the estimated heart rate or leg shaking frequency<br>
+-Read the mouse displacement data over a period of time (default 5s, sampling rate 100/s), then apply ICA transform and filtering to the data. Finally, take the highest peak in the frequency spectrum as the estimated heart rate or leg shaking frequency<br>
 -The accuracy of heart rate measurement can be significantly affected by the positioning of the hand and other factors<br>
 
 ## 演示/Demo
